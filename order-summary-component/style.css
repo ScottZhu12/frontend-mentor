@@ -1,0 +1,173 @@
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+
+  --secondary-pale-blue: hsl(225, 100%, 98%);
+  --secondary-desaturated-blue: hsl(224, 23%, 55%);
+  --secondary-dark-blue: hsl(223, 47%, 23%);
+
+  --hover-bright-blue: hsla(245, 75%, 52%, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  background: url("images/pattern-background-desktop.svg")
+    var(--primary-pale-blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 23%;
+  background: #fff;
+
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-bottom: 2.8rem;
+  overflow: hidden;
+}
+
+.card-img > img {
+  width: 100%;
+}
+
+.card-content > h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--secondary-dark-blue);
+  text-align: center;
+  padding-top: 2.8rem;
+}
+
+.card-content > p {
+  font-size: 1.6rem;
+  width: 80%;
+  margin: 2.2rem auto;
+  text-align: center;
+  color: var(--secondary-desaturated-blue);
+}
+
+.subscribe-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 2.2rem auto;
+  background: var(--secondary-pale-blue);
+  padding: 1.4rem;
+  border-radius: 10px;
+}
+
+.subscribe-container > div {
+  margin-left: 1.8rem;
+}
+
+.subscribe-container h3,
+.subscribe-container small {
+  font-size: 1.6rem;
+}
+
+.subscribe-container h3 {
+  color: var(--secondary-dark-blue);
+  font-weight: 900;
+}
+
+.subscribe-container small {
+  color: var(--secondary-desaturated-blue);
+}
+
+.subscribe-container a:link,
+.subscribe-container a:visited {
+  display: block;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-bright-blue);
+  margin-left: 10.8rem;
+}
+
+.subscribe-container a:hover,
+.subscribe-container a:active {
+  text-decoration: none;
+  color: var(--hover-bright-blue);
+}
+
+.button {
+  display: block;
+  font-family: inherit;
+  cursor: pointer;
+  width: 80%;
+  margin: 2.2rem auto;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.payment {
+  background: var(--primary-bright-blue);
+  color: #fff;
+  padding: 1.4rem 0;
+  border-radius: 10px;
+  box-shadow: var(--primary-bright-blue) 0px 20px 30px -10px;
+}
+
+.payment:hover {
+  background-color: var(--hover-bright-blue);
+}
+
+.payment-cancel {
+  width: fit-content;
+  color: var(--secondary-desaturated-blue);
+  margin-top: 3.6rem;
+}
+
+.payment-cancel:hover {
+  color: var(--secondary-dark-blue);
+}
+
+@media (max-width: 375px) {
+  .card {
+    min-width: 90%;
+  }
+
+  .card-content > h2 {
+    font-size: 2.2rem;
+  }
+
+  .card-content > p {
+    font-size: 1.5rem;
+  }
+
+  .subscribe-container h3,
+  .subscribe-container small {
+    font-size: 1.4rem;
+  }
+
+  .subscribe-container a:link,
+  .subscribe-container a:visited {
+    margin-left: 3.8rem;
+  }
+
+  .button {
+    font-size: 1.4rem;
+  }
+}
