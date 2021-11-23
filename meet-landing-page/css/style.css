@@ -1,0 +1,52 @@
+:root {
+  --main-background-color: #fafafa;
+
+  --btn-color-green: #4d96a9;
+  --btn-color-purple: #855fb1;
+
+  --main-text-color: #28283d;
+  --secondary-text-color: #87879d;
+
+  --btn-hover-blue: #8fe3f9;
+  --btn-hover-purple: #d9b8ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  background-color: var(--main-background-color);
+}
+
+.main {
+  width: 100%;
+}
+
+button {
+  font-family: inherit;
+  background: none;
+  border: none;
+}
+
+.header-logo-box {
+  display: flex;
+  justify-content: center;
+}
+
+/* @media (max-width: 1440px) {
+  
+} */
