@@ -1,0 +1,151 @@
+.main {
+  width: 144rem;
+  background-color: $color-white;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+}
+
+.header {
+  padding-top: 8rem;
+
+  &-logo {
+    width: 12rem;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    @include respond(tab-port) {
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    & img {
+      width: 100%;
+    }
+
+    &__left {
+      justify-self: left;
+      transform: translateX(-8%);
+
+      @include respond(tab-port) {
+        grid-column: 1 / 7;
+      }
+    }
+
+    &__center {
+      text-align: center;
+      align-self: center;
+      padding: 0.4rem;
+
+      &-cta {
+        margin-top: 6rem;
+
+        @include respond(phone) {
+          margin-top: 4rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        & > a:last-of-type {
+          @include respond(phone) {
+            margin-top: 2rem;
+          }
+        }
+      }
+
+      @include respond(tab-port) {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        width: 55%;
+        justify-self: center;
+        margin-top: 4.8rem;
+      }
+
+      @include respond(phone) {
+        margin-top: -10rem;
+        width: 80%;
+      }
+    }
+
+    &__right {
+      justify-self: end;
+      transform: translateX(8%);
+
+      @include respond(tab-port) {
+        grid-column: 7 / -1;
+      }
+    }
+  }
+}
+
+.section-gallery {
+  width: 80%;
+  column-gap: $horizontal-gap-large;
+
+  @include respond(tab-port) {
+    width: 90%;
+  }
+
+  @include respond(phone) {
+    row-gap: 2rem;
+  }
+}
+
+.gallery-img {
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem;
+  }
+
+  @include respond(phone) {
+    grid-column: auto / span 6;
+  }
+}
+
+.section-feature {
+  width: 37.5%;
+  text-align: center;
+
+  @include respond(tab-port) {
+    width: 80%;
+  }
+
+  @include respond(phone) {
+    margin-top: 8rem;
+  }
+}
+
+.footer {
+  margin-top: -3rem;
+  background-image: linear-gradient(
+      rgba(77, 150, 169, 0.85),
+      rgba(77, 150, 169, 0.85)
+    ),
+    url("../../img/desktop/image-footer.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10rem 0;
+
+  &-container {
+    width: 80%;
+    align-items: center;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 95%;
+      gap: 4rem;
+      padding: 0;
+    }
+  }
+}

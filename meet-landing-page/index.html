@@ -12,7 +12,7 @@
     />
 
     <link
-      rel="icon"
+      rel="shortcut icon"
       type="image/png"
       sizes="32x32"
       href="./img/favicon-32x32.png"
@@ -20,48 +20,116 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Frontend Mentor | Meet landing page</title>
+    <title>Meet landing page</title>
   </head>
   <body>
     <main class="main">
       <header class="header">
-        <div class="header-logo-box">
-          <img src="./img/logo.svg" alt="logo of the page" />
+        <div class="header-logo u-content-center">
+          <img src="img/logo.svg" alt="company logo" />
         </div>
 
-        <div class="header-content-box">
-          <div class="header-img-box">
+        <div class="header-content grid-col-12 u-mar-top-large">
+          <div class="header-content__left col-3-of-12">
             <img
               src="./img/desktop/image-hero-left.png"
-              alt="image of people's selfies"
+              alt="image of a group of people"
             />
           </div>
 
-          <div class="header-detail-box">
-            <h1>Group Chat for Everyone</h1>
+          <div class="header-content__center col-3-of-12">
+            <h1 class="heading-main">Group Chat for Everyone</h1>
 
-            <p>
+            <p class="paragraph u-mar-top-large">
               Meet makes it easy to connect with others face-to-face virtually
               and collaborate across any device.
             </p>
+
+            <div class="header-content__center-cta">
+              <a href="#" class="btn btn--green">Download <span>v1.3</span></a>
+
+              <a href="#" class="btn btn--purple u-mar-left-small"
+                >What is it?</a
+              >
+            </div>
           </div>
 
-          <div class="header-btns-box">
-            <button class="header-btn-download">
-              Download <span>v1.3</span>
-            </button>
-
-            <button class="header-btn-more">What is it?</button>
-          </div>
-
-          <div class="header-img-box">
+          <div class="header-content__right col-3-of-12">
             <img
               src="./img/desktop/image-hero-right.png"
-              alt="image of people's selfies"
+              alt="image of a group of people"
             />
           </div>
         </div>
       </header>
+
+      <div
+        class="indicator indicator--1 u-content-center u-mar-top-ex-large"
+      ></div>
+
+      <section
+        class="section-gallery u-content-center u-mar-top-ex-large grid-col-12"
+      >
+        <div class="gallery-img col-4-of-12">
+          <img
+            src="./img/desktop/image-woman-in-videocall.jpg"
+            alt="woman in videocall"
+          />
+        </div>
+
+        <div class="gallery-img col-4-of-12">
+          <img
+            src="./img/desktop/image-women-videochatting.jpg"
+            alt="women in videochatting"
+          />
+        </div>
+
+        <div class="gallery-img col-4-of-12">
+          <img src="./img/desktop/image-man-texting.jpg" alt="man in texting" />
+        </div>
+
+        <div class="gallery-img col-4-of-12">
+          <img
+            src="./img/desktop/image-men-in-meeting.jpg"
+            alt="men in meeting"
+          />
+        </div>
+      </section>
+
+      <section class="section-feature u-content-center u-mar-top-large">
+        <h3 class="heading-tertiary">built for modern use</h3>
+
+        <h2 class="heading-secondary heading-secondary--black u-mar-top-small">
+          Smarter meetings, all in one place
+        </h2>
+
+        <p class="paragraph paragraph--feature u-mar-top-small">
+          Send messages, share files, show your screen, and record your meetings
+          - all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </p>
+      </section>
+
+      <div
+        class="indicator indicator--2 u-content-center u-mar-top-large"
+      ></div>
+
+      <footer class="footer">
+        <div class="footer-container u-content-center grid-col-12">
+          <h2 class="heading-secondary heading-secondary--white col-5-of-12">
+            Experience more together
+          </h2>
+
+          <p class="paragraph paragraph--footer col-5-of-12">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+
+          <a href="#" class="btn btn--purple col-2-of-12"
+            >Download <span>v1.3</span></a
+          >
+        </div>
+      </footer>
     </main>
   </body>
 </html>

@@ -1,0 +1,46 @@
+%indicator-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: $color-grey;
+  background-color: $color-white;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5.6rem;
+  height: 5.6rem;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 50%;
+}
+
+.indicator {
+  position: relative;
+  width: 5.6rem;
+  height: 14rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 8.4rem;
+    background-color: rgba(135, 135, 157, 0.25);
+  }
+
+  &--1::after {
+    content: "01";
+    @extend %indicator-placeholder;
+  }
+
+  &--2::after {
+    content: "02";
+    @extend %indicator-placeholder;
+    z-index: 999;
+  }
+}

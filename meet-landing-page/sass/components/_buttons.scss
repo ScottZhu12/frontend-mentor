@@ -1,0 +1,32 @@
+.btn {
+  text-decoration: none;
+  color: $color-white;
+  padding: 1.6rem 3.2rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  transition: all 0.3s;
+
+  @include respond(phone) {
+    display: block;
+    width: fit-content;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--green {
+    background-color: $color-green;
+
+    & > span {
+      color: $color-blue;
+    }
+  }
+
+  &--purple {
+    background-color: $color-purple-dark;
+  }
+}

@@ -1,0 +1,27 @@
+.u-content-center {
+  margin: 0 auto;
+}
+
+.u-mar-top-ex-large {
+  margin-top: 10rem;
+}
+
+.u-mar-top-large {
+  margin-top: 4rem;
+}
+
+.u-mar-top-medium {
+  margin-top: 2.4rem;
+}
+
+.u-mar-top-small {
+  margin-top: 1.6rem;
+
+  @include respond(phone) {
+    margin-top: 3.6rem;
+  }
+}
+
+.u-mar-left-small {
+  margin-left: 1.6rem;
+}

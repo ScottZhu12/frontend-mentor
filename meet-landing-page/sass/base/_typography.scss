@@ -1,0 +1,87 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: 0.3px;
+
+  @include respond(tab-port) {
+    line-height: 2.9rem;
+  }
+
+  @include respond(phone) {
+    line-height: 3.7rem;
+  }
+}
+
+.heading-main {
+  font-size: 6.4rem;
+  font-weight: 900;
+  color: $color-black;
+  line-height: 6.4rem;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: $color-green;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+
+  @include respond(phone) {
+    font-size: 2.2rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4.4rem;
+
+  &--black {
+    color: $color-black;
+
+    @include respond(tab-port) {
+      width: 65%;
+      margin: 0 auto;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
+  }
+
+  &--white {
+    color: $color-white;
+
+    @include respond(tab-port) {
+      width: 50%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: $color-grey;
+
+  &--feature {
+    padding: 0.5rem;
+
+    @include respond(phone) {
+      padding: 0.4rem;
+    }
+  }
+
+  &--footer {
+    color: $color-white;
+    width: 75%;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+}
