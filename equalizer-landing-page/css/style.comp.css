@@ -1,0 +1,317 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box; }
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.3px; }
+
+.heading {
+  color: #191826;
+  font-weight: 700; }
+  .heading-primary {
+    font-size: 8.8rem;
+    line-height: 8.8rem;
+    letter-spacing: -0.1rem; }
+    @media only screen and (max-width: 48em) {
+      .heading-primary {
+        font-size: 6.4rem;
+        line-height: 6.4rem; } }
+    @media only screen and (max-width: 23.5em) {
+      .heading-primary {
+        font-size: 4rem;
+        line-height: 4.8rem; } }
+  .heading-secondary {
+    font-size: 4rem;
+    line-height: 5.2rem; }
+    @media only screen and (max-width: 48em) {
+      .heading-secondary {
+        font-size: 3.2rem;
+        line-height: 4rem; } }
+
+.paragraph {
+  color: #191826; }
+  .paragraph-medium {
+    font-size: 2rem;
+    line-height: 3.4rem; }
+    @media only screen and (max-width: 48em) {
+      .paragraph-medium {
+        font-size: 1.8rem;
+        line-height: 2.8rem; } }
+    @media only screen and (max-width: 23.5em) {
+      .paragraph-medium {
+        font-size: 1.6rem;
+        line-height: 2.6rem; } }
+  .paragraph-small {
+    font-size: 1.6rem;
+    line-height: 2.6rem; }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  border-radius: 1.2rem;
+  transition: background-color 0.3s; }
+  .btn--ios:link, .btn--ios:visited {
+    color: #fcfaf9;
+    background-color: #191826; }
+  .btn--ios:hover, .btn--ios:active {
+    background-color: #66e2dc; }
+  .btn--android:link, .btn--android:visited {
+    color: #191826;
+    background-color: #fcfaf9; }
+  .btn--android:hover, .btn--android:active {
+    background-color: #ffb964; }
+  .btn__icon {
+    width: 1.6rem;
+    height: 1.8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .btn__icon--ios {
+      background-image: url("../../images/icon-apple.svg"); }
+    .btn__icon--android {
+      background-image: url("../../images/icon-android.svg"); }
+
+.flex-col {
+  display: flex;
+  flex-direction: column; }
+
+.main {
+  position: relative;
+  align-items: center;
+  width: 144rem;
+  background-image: url("../../images/bg-main-desktop.png");
+  background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 9rem; }
+  @media only screen and (max-width: 48em) {
+    .main {
+      width: 100%; } }
+
+.header {
+  width: 80%; }
+  @media only screen and (max-width: 48em) {
+    .header {
+      width: 90%; } }
+  .header-logo {
+    width: 14.5rem; }
+    .header-logo > img {
+      width: 100%; }
+  .header-content > h1 {
+    margin-top: 12.5rem;
+    width: 90%; }
+    @media only screen and (max-width: 48em) {
+      .header-content > h1 {
+        width: 80%; } }
+    @media only screen and (max-width: 23.5em) {
+      .header-content > h1 {
+        margin-top: 6.4rem; } }
+  .header-content > p {
+    width: 75%;
+    margin-top: 4rem; }
+    @media only screen and (max-width: 48em) {
+      .header-content > p {
+        width: 80%; } }
+    @media only screen and (max-width: 23.5em) {
+      .header-content > p {
+        width: 100%;
+        margin-top: 2rem; } }
+  .header-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%; }
+    @media only screen and (max-width: 48em) {
+      .header-img {
+        width: 26.5rem; } }
+    @media only screen and (max-width: 23.5em) {
+      .header-img {
+        display: none; } }
+    .header-img > img {
+      width: 100%; }
+
+.subscribe {
+  width: 80%;
+  height: 40vw;
+  margin-top: 32rem;
+  background-color: #191826;
+  color: #fcfaf9;
+  border-radius: 1.2rem;
+  position: relative; }
+  @media only screen and (max-width: 48em) {
+    .subscribe {
+      width: 90%;
+      margin-top: 25rem;
+      height: 80vw; } }
+  @media only screen and (max-width: 23.5em) {
+    .subscribe {
+      width: 100%;
+      margin-top: 16.5rem;
+      height: 100vh; } }
+  .subscribe__demo {
+    width: 25%;
+    position: absolute;
+    top: -35%;
+    left: 10%;
+    z-index: 999; }
+    @media only screen and (max-width: 48em) {
+      .subscribe__demo {
+        width: 40%;
+        top: -25%; } }
+    @media only screen and (max-width: 23.5em) {
+      .subscribe__demo {
+        width: 50%;
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%); } }
+    .subscribe__demo > img {
+      width: 100%; }
+  .subscribe__img {
+    width: 25%;
+    position: absolute;
+    top: -8%;
+    left: 28.7%; }
+    @media only screen and (max-width: 48em) {
+      .subscribe__img {
+        width: 40%;
+        top: -5%;
+        left: 35%; } }
+    @media only screen and (max-width: 23.5em) {
+      .subscribe__img {
+        width: 75%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); } }
+    .subscribe__img > img {
+      width: 100%; }
+  .subscribe__card {
+    position: absolute;
+    background-color: #fa7453;
+    width: 40%;
+    border-radius: 1.2rem;
+    bottom: -18%;
+    right: 10%;
+    padding: 5.8rem; }
+    @media only screen and (max-width: 48em) {
+      .subscribe__card {
+        width: 58%;
+        padding: 4.8rem;
+        z-index: 9999; } }
+    @media only screen and (max-width: 23.5em) {
+      .subscribe__card {
+        width: 100%;
+        bottom: -20%;
+        right: 0;
+        padding: 4.8rem 3.6rem; } }
+    .subscribe__card > p {
+      margin-top: 2.2rem; }
+      @media only screen and (max-width: 23.5em) {
+        .subscribe__card > p {
+          font-size: 1.8rem;
+          line-height: 2.8rem; } }
+    .subscribe__card__price {
+      margin-top: 4rem;
+      display: flex;
+      align-items: center;
+      gap: 1.6rem; }
+      @media only screen and (max-width: 23.5em) {
+        .subscribe__card__price > span {
+          font-size: 2rem;
+          line-height: 3.2rem; } }
+      .subscribe__card__price > span:first-of-type {
+        font-size: 6.5rem;
+        line-height: 5.2rem;
+        font-weight: 700; }
+  .subscribe__btns {
+    margin-top: 4.6rem;
+    align-items: center;
+    gap: 1.6rem; }
+
+.footer {
+  width: 80%;
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (max-width: 48em) {
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 3.2rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .footer {
+      display: block;
+      width: 90%; } }
+  .footer__logo {
+    width: 14.5rem; }
+    @media only screen and (max-width: 48em) {
+      .footer__logo {
+        grid-column: 1 / -1; } }
+    .footer__logo > img {
+      width: 100%; }
+  .footer__text {
+    margin-left: 13.5rem;
+    margin-right: auto; }
+    @media only screen and (max-width: 48em) {
+      .footer__text {
+        margin: 0;
+        grid-column: 1 / span 3; } }
+    @media only screen and (max-width: 23.5em) {
+      .footer__text {
+        margin-top: 3.2rem; } }
+    .footer__text-email:link, .footer__text-email:visited {
+      color: inherit;
+      font-family: inherit;
+      font-weight: 700;
+      text-decoration: none; }
+  .footer__social {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    align-self: center; }
+    @media only screen and (max-width: 48em) {
+      .footer__social {
+        justify-self: end;
+        width: 60%; } }
+    @media only screen and (max-width: 23.5em) {
+      .footer__social {
+        margin-top: 6.4rem;
+        justify-content: flex-start;
+        gap: 2rem; } }
+    .footer__social-icon {
+      width: 2rem;
+      height: 2rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition: all 0.3s; }
+      .footer__social-icon--1 {
+        background-image: url("../../images/icon-facebook.svg"); }
+      .footer__social-icon--2 {
+        background-image: url("../../images/icon-instagram.svg"); }
+      .footer__social-icon--3 {
+        background-image: url("../../images/icon-twitter.svg"); }
+    .footer__social-icon:hover, .footer__social-icon:active {
+      filter: invert(52%) sepia(53%) saturate(703%) hue-rotate(322deg) brightness(101%) contrast(96%); }
