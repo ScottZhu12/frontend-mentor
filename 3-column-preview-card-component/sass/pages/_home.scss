@@ -1,0 +1,98 @@
+.main {
+  width: 144rem;
+  padding: 17rem 26rem 13rem 26rem;
+
+  @include respond(phone) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include respond(phone) {
+    display: block;
+  }
+
+  &-content {
+    padding: 4.8rem;
+    border-radius: 0.8rem;
+
+    &--1 {
+      position: relative;
+      background-color: $color-orange;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        top: 0;
+        right: -5px;
+        background-color: $color-orange;
+        z-index: -1;
+
+        @include respond(phone) {
+          width: 100%;
+          height: 100%;
+          top: 10px;
+          right: 0;
+        }
+      }
+    }
+
+    &--2 {
+      position: relative;
+      background-color: $color-cyan-dark-1;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        top: 0;
+        right: -5px;
+        background-color: $color-cyan-dark-1;
+        z-index: -1;
+
+        @include respond(phone) {
+          width: 100%;
+          height: 100%;
+          top: 10px;
+          right: 0;
+        }
+      }
+    }
+
+    &--3 {
+      background-color: $color-cyan-dark-2;
+    }
+
+    &__img {
+      display: inline-block;
+      width: 30%;
+    }
+
+    &__text {
+      margin-top: 3.5rem;
+
+      & > p {
+        margin-top: 2.5rem;
+
+        @include respond(phone) {
+          width: 90%;
+        }
+      }
+    }
+
+    & > .btn {
+      margin-top: 8.3rem;
+
+      @include respond(phone) {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.2rem 3.2rem;
+    background-color: $color-white;
+    border-radius: 2.5rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+    color: $color-grey;
+    border: 2px solid $color-grey;
+  }
+
+  &--orange {
+    color: $color-orange;
+  }
+
+  &--cyan-dark-1 {
+    color: $color-cyan-dark-1;
+  }
+
+  &--cyan-dark-2 {
+    color: $color-cyan-dark-2;
+  }
+}
