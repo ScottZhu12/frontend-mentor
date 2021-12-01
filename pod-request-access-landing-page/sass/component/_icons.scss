@@ -1,0 +1,19 @@
+.icons {
+  margin-top: 6.4rem;
+  display: flex;
+  gap: 4rem;
+
+  @include respond(phone) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+    margin-top: -40%;
+  }
+
+  &-img {
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}

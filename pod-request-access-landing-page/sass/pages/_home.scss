@@ -1,0 +1,132 @@
+.main {
+  background-color: $color-blue-dark-1;
+  padding: 13rem 0 13rem 16.5rem;
+
+  @include respond(big-desktop) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @include respond(desktop) {
+    width: 100%;
+  }
+
+  @include respond(tab-land) {
+    padding: 0;
+    height: 130vw;
+  }
+
+  @include respond(phone) {
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(18, 23, 37, 0.8),
+        rgba(18, 23, 37, 0.8)
+      ),
+      url("../../imgs/mobile/image-host.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.pod {
+  position: relative;
+
+  &-logo {
+    display: inline-block;
+    width: 13.5rem;
+    position: absolute;
+    top: -4%;
+    left: 0;
+    z-index: 99;
+
+    @include respond(tab-land) {
+      top: 5rem;
+      left: 4rem;
+    }
+
+    @include respond(phone) {
+      position: static;
+      display: block;
+      margin: 0 auto;
+      padding-top: 6.2rem;
+    }
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+
+    @include respond(tab-land) {
+      grid-template-columns: repeat(10, 1fr);
+    }
+
+    @include respond(phone) {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 5.8rem;
+    }
+
+    &__form {
+      position: absolute;
+      grid-column: 1 / 5;
+      background-color: $color-blue-dark-1;
+      top: 20%;
+      left: 0;
+      width: 100%;
+      height: 80%;
+      padding-top: 8.8rem;
+      padding-right: 5.8rem;
+
+      @include respond(tab-land) {
+        grid-column: 1 / 9;
+        top: 35%;
+        left: 0;
+        padding-right: 0;
+        padding-left: 4rem;
+      }
+
+      @include respond(phone) {
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        text-align: center;
+      }
+    }
+
+    &__img {
+      grid-column: 3 / -1;
+
+      @include respond(tab-land) {
+        grid-column: 5 / -1;
+      }
+
+      @include respond(phone) {
+        display: none;
+      }
+
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+
+  &-pattern {
+    position: absolute;
+    bottom: -8%;
+    right: 0;
+
+    @include respond(tab-land) {
+      bottom: -35%;
+      left: 4rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+}

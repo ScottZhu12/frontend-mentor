@@ -1,0 +1,228 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  width: 100vw;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Chivo", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.3px; }
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 6.2rem;
+  text-transform: uppercase;
+  font-weight: 400; }
+  @media only screen and (max-width: 48em) {
+    .heading-primary {
+      font-size: 4.4rem;
+      line-height: 5.6rem; } }
+  @media only screen and (max-width: 23.45em) {
+    .heading-primary {
+      font-size: 2.5rem;
+      line-height: 3.8rem; } }
+  .heading-primary > span:first-of-type {
+    color: #54e6af; }
+  .heading-primary > span:last-of-type {
+    color: #fff; }
+
+.paragraph {
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #c2cbe6;
+  width: 70%; }
+  @media only screen and (max-width: 48em) {
+    .paragraph {
+      margin-top: 3rem;
+      width: 80%; } }
+  @media only screen and (max-width: 23.45em) {
+    .paragraph {
+      margin-top: 1.6rem;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      width: 100%; } }
+
+.form {
+  display: inline-block;
+  position: relative;
+  margin-top: 4rem;
+  width: 70%; }
+  @media only screen and (max-width: 48em) {
+    .form {
+      width: 80%; } }
+  @media only screen and (max-width: 23.45em) {
+    .form {
+      width: 100%; } }
+  .form__input-email {
+    position: relative;
+    width: 100%;
+    padding: 1.4rem 3.2rem;
+    background-color: #2c344b;
+    border-radius: 2.8rem;
+    border: none;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    font-family: inherit;
+    color: #fff; }
+    @media only screen and (max-width: 23.45em) {
+      .form__input-email {
+        margin-top: 20%; } }
+    .form__input-email::placeholder {
+      color: #c2cbe6; }
+    .form__input-email:focus {
+      outline: none; }
+  .form__btn {
+    position: absolute;
+    top: 50%;
+    right: 0.5%;
+    transform: translateY(-50%);
+    padding: 1.8rem 2.7rem;
+    background-color: #54e6af;
+    border: none;
+    border-radius: 2.8rem;
+    color: #121725;
+    font-size: 1.4rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s; }
+    @media only screen and (max-width: 23.45em) {
+      .form__btn {
+        width: 100%;
+        top: 140%;
+        left: 0; } }
+    .form__btn:hover {
+      background-color: #fff; }
+  .form__input-error {
+    color: orangered;
+    font-size: 1.2rem;
+    font-family: inherit;
+    position: absolute;
+    bottom: -2rem;
+    left: 3.2rem;
+    display: none; }
+
+.icons {
+  margin-top: 6.4rem;
+  display: flex;
+  gap: 4rem; }
+  @media only screen and (max-width: 23.45em) {
+    .icons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 2rem;
+      align-items: center;
+      margin-top: -40%; } }
+  @media only screen and (max-width: 23.45em) {
+    .icons-img {
+      width: 100%; } }
+
+.main {
+  background-color: #121725;
+  padding: 13rem 0 13rem 16.5rem; }
+  @media only screen and (min-width: 93.75em) {
+    .main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
+  @media only screen and (max-width: 90em) {
+    .main {
+      width: 100%; } }
+  @media only screen and (max-width: 48em) {
+    .main {
+      padding: 0;
+      height: 130vw; } }
+  @media only screen and (max-width: 23.45em) {
+    .main {
+      height: 100vh;
+      background-image: linear-gradient(rgba(18, 23, 37, 0.8), rgba(18, 23, 37, 0.8)), url("../../imgs/mobile/image-host.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; } }
+
+.pod {
+  position: relative; }
+  .pod-logo {
+    display: inline-block;
+    width: 13.5rem;
+    position: absolute;
+    top: -4%;
+    left: 0;
+    z-index: 99; }
+    @media only screen and (max-width: 48em) {
+      .pod-logo {
+        top: 5rem;
+        left: 4rem; } }
+    @media only screen and (max-width: 23.45em) {
+      .pod-logo {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        padding-top: 6.2rem; } }
+  .pod-content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative; }
+    @media only screen and (max-width: 48em) {
+      .pod-content {
+        grid-template-columns: repeat(10, 1fr); } }
+    @media only screen and (max-width: 23.45em) {
+      .pod-content {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 5.8rem; } }
+    .pod-content__form {
+      position: absolute;
+      grid-column: 1 / 5;
+      background-color: #121725;
+      top: 20%;
+      left: 0;
+      width: 100%;
+      height: 80%;
+      padding-top: 8.8rem;
+      padding-right: 5.8rem; }
+      @media only screen and (max-width: 48em) {
+        .pod-content__form {
+          grid-column: 1 / 9;
+          top: 35%;
+          left: 0;
+          padding-right: 0;
+          padding-left: 4rem; } }
+      @media only screen and (max-width: 23.45em) {
+        .pod-content__form {
+          position: static;
+          background-color: transparent;
+          padding: 0;
+          text-align: center; } }
+    .pod-content__img {
+      grid-column: 3 / -1; }
+      @media only screen and (max-width: 48em) {
+        .pod-content__img {
+          grid-column: 5 / -1; } }
+      @media only screen and (max-width: 23.45em) {
+        .pod-content__img {
+          display: none; } }
+      .pod-content__img > img {
+        width: 100%; }
+  .pod-pattern {
+    position: absolute;
+    bottom: -8%;
+    right: 0; }
+    @media only screen and (max-width: 48em) {
+      .pod-pattern {
+        bottom: -35%;
+        left: 4rem; } }
+    @media only screen and (max-width: 23.45em) {
+      .pod-pattern {
+        display: none; } }

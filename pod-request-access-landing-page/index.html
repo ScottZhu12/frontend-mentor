@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./imgs/favicon-32x32.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="./imgs/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="32x32"
+      href="./imgs/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script defer src="./js/main.js"></script>
+
+    <title>pod-request-access-landing-page</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="pod">
+        <img
+          src="./imgs/desktop/logo.svg"
+          alt="company logo"
+          class="pod-logo"
+        />
+
+        <div class="pod-content">
+          <div class="pod-content__form">
+            <h1 class="heading-primary">
+              <span>publish your podcasts</span>
+
+              <span>everywhere.</span>
+            </h1>
+
+            <p class="paragraph">
+              Upload your audio to Pod with a single click. We'll then
+              distribute your podcast to Sportify. Apple Podcasts. Google
+              Podcasts. Pocket Casts and more!
+            </p>
+
+            <form action="#" class="form">
+              <input
+                type="email"
+                class="form__input-email"
+                placeholder="Email address"
+                required
+              />
+
+              <button class="form__btn">Request Access</button>
+
+              <div class="form__input-error">Opps! Please check your email</div>
+            </form>
+
+            <div class="icons">
+              <img
+                src="./imgs/desktop/spotify.svg"
+                alt="image of sportify icon"
+                class="icons-img"
+              />
+
+              <img
+                src="./imgs/desktop/apple-podcast.svg"
+                alt="image of apple podcast icon"
+                class="icons-img"
+              />
+
+              <img
+                src="./imgs/desktop/google-podcasts.svg"
+                alt="image of google podcast icon"
+                class="icons-img"
+              />
+
+              <img
+                src="./imgs/desktop/pocket-casts.svg"
+                alt="image of pocket cast icon"
+                class="icons-img"
+              />
+            </div>
+          </div>
+
+          <picture class="pod-content__img">
+            <source
+              srcset="./imgs/mobile/image-host.jpg"
+              media="(max-width: 23.45em)"
+            />
+
+            <source
+              srcset="./imgs/tablet/image-host.jpg"
+              media="(max-width: 48em)"
+            />
+
+            <source
+              srcset="./imgs/desktop/image-host.jpg"
+              media="(max-width: 90em)"
+            />
+
+            <img
+              src="./imgs/desktop/image-host.jpg"
+              alt="image of a man singing"
+            />
+          </picture>
+        </div>
+
+        <img
+          src="./imgs/desktop/bg-pattern-dots.svg"
+          alt="an image of dots pattern"
+          class="pod-pattern"
+        />
+      </div>
+    </main>
+  </body>
+</html>
