@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./imgs/favicon-32x32.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="./imgs/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="32x32"
+      href="./imgs/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>FAQ accordion card</title>
+  </head>
+  <body>
+    <main class="main">
+      <img
+        src="./imgs/illustration-box-desktop.svg"
+        alt="image of a box"
+        class="card-imgs-box"
+      />
+
+      <section class="section-card">
+        <picture class="card-imgs">
+          <source
+            srcset="./imgs/bg-pattern-mobile.svg"
+            media="(max-width:23.5em)"
+          />
+
+          <img
+            src="./imgs/bg-pattern-desktop.svg"
+            alt="a background image"
+            class="card-imgs__bg"
+          />
+        </picture>
+
+        <picture class="card-imgs__img">
+          <source
+            srcset="./imgs/illustration-woman-online-mobile.svg"
+            media="(max-width:23.5em)"
+          />
+
+          <img
+            src="./imgs/illustration-woman-online-desktop.svg"
+            alt="woman looking at a computer"
+          />
+        </picture>
+
+        <div class="card-content">
+          <h1 class="heading-primary">FAQ</h1>
+
+          <div class="list">
+            <div class="list__item">
+              <div class="list__item-question">
+                <h2 class="heading-secondary">
+                  How many team members can I invite?
+                </h2>
+
+                <span class="icon"
+                  ><img
+                    src="./imgs/icon-arrow-down.svg"
+                    alt="image of a down arrow"
+                    class="icon__img"
+                /></span>
+              </div>
+            </div>
+
+            <div class="list__item">
+              <div class="list__item-question">
+                <h2 class="heading-secondary heading-secondary--focus">
+                  What is the maximum file upload size?
+                </h2>
+
+                <span class="icon"
+                  ><img
+                    src="./imgs/icon-arrow-down.svg"
+                    alt="image of a down arrow"
+                    class="icon__img icon__img--flipped"
+                /></span>
+              </div>
+
+              <p class="paragraph">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+
+            <div class="list__item">
+              <div class="list__item-question">
+                <h2 class="heading-secondary">How do I reset my password?</h2>
+
+                <span class="icon"
+                  ><img
+                    src="./imgs/icon-arrow-down.svg"
+                    alt="image of a down arrow"
+                    class="icon__img"
+                /></span>
+              </div>
+            </div>
+
+            <div class="list__item">
+              <div class="list__item-question">
+                <h2 class="heading-secondary">Can I cancel my subscription?</h2>
+
+                <span class="icon"
+                  ><img
+                    src="./imgs/icon-arrow-down.svg"
+                    alt="image of a down arrow"
+                    class="icon__img"
+                /></span>
+              </div>
+            </div>
+
+            <div class="list__item">
+              <div class="list__item-question">
+                <h2 class="heading-secondary">
+                  Do you provide additional support?
+                </h2>
+
+                <span class="icon"
+                  ><img
+                    src="./imgs/icon-arrow-down.svg"
+                    alt="image of a down arrow"
+                    class="icon__img"
+                /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

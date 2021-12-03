@@ -12,3 +12,4 @@
 | HTML-CSS            | 3 column preview card component | [Live](https://3-column-preview-card-component-scottzhu.netlify.app/) |
 | HTML-CSS-JAVASCRIPT | pod request access landing page | [Live](https://pod-request-access-landing-page-scottzhu.netlify.app/) |
 | HTML-CSS            | profile card component          | [Live](https://profile-card-component-scottzhu.netlify.app/)          |
+| HTML-CSS            | FAQ accordion card              | [Live](https://faq-accordion-card-scottzhu.netlify.app/)              |
