@@ -1,0 +1,185 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  width: 100vw;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0.3px; }
+
+.heading-primary {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -1.7px;
+  color: #502050; }
+  @media only screen and (max-width: 23.5em) {
+    .heading-primary {
+      font-size: 3.2rem;
+      line-height: 3.2rem; } }
+
+.heading-secondary {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.45rem; }
+  .heading-secondary--magenta {
+    color: #502050; }
+  .heading-secondary--white {
+    color: #ffffff; }
+  .heading-secondary--pink {
+    color: #ee68a4; }
+
+.paragraph {
+  font-size: 1.5rem;
+  color: #937b92;
+  line-height: 2.5rem;
+  letter-spacing: -0.5px;
+  font-weight: 500; }
+  .paragraph--review {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    letter-spacing: -0.23px;
+    font-weight: 500;
+    color: #ffffff; }
+
+.main {
+  width: 100%;
+  max-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 23.5em) {
+    .main {
+      display: block;
+      max-height: auto; } }
+  .main-bg {
+    position: absolute;
+    z-index: -1; }
+    .main-bg--top {
+      top: 0;
+      left: 0;
+      width: 40%; }
+      @media only screen and (max-width: 23.5em) {
+        .main-bg--top {
+          width: 100%; } }
+    .main-bg--bottom {
+      top: 0;
+      right: 0;
+      width: 86%; }
+      @media only screen and (max-width: 23.5em) {
+        .main-bg--bottom {
+          width: 100%;
+          top: 130%; } }
+
+.products {
+  width: 78%;
+  display: flex;
+  padding-top: 12.8rem;
+  align-items: center;
+  gap: 12.5rem; }
+  @media only screen and (max-width: 23.5em) {
+    .products {
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 8rem; } }
+  .products__header {
+    flex: 0 1 40%; }
+    @media only screen and (max-width: 23.5em) {
+      .products__header {
+        padding: 0 0.6rem; } }
+    .products__header > p {
+      margin-top: 0.6rem; }
+      @media only screen and (max-width: 23.5em) {
+        .products__header > p {
+          margin-top: 1.8rem; } }
+  .products__ratings {
+    flex: 0 1 50%; }
+    @media only screen and (max-width: 23.5em) {
+      .products__ratings {
+        margin-top: 4rem; } }
+    .products__ratings-bar {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      padding: 2rem 3.2rem;
+      background-color: #f7f2f7;
+      border-radius: 0.8rem;
+      gap: 3.2rem; }
+      @media only screen and (max-width: 23.5em) {
+        .products__ratings-bar {
+          width: 100%;
+          flex-direction: column;
+          padding: 1.6rem;
+          gap: 1.6rem; } }
+      .products__ratings-bar:not(:first-of-type) {
+        margin-top: 1.6rem; }
+      .products__ratings-bar--2 {
+        margin-left: 4.8rem; }
+        @media only screen and (max-width: 23.5em) {
+          .products__ratings-bar--2 {
+            margin: 0; } }
+      .products__ratings-bar--3 {
+        margin-left: 9.6rem; }
+        @media only screen and (max-width: 23.5em) {
+          .products__ratings-bar--3 {
+            margin: 0; } }
+
+.stars-container {
+  display: flex;
+  gap: 0.85rem;
+  align-items: center; }
+  .stars-container--star {
+    width: 1.65rem; }
+
+.customer {
+  width: 78%;
+  margin-top: 7.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 3rem; }
+  @media only screen and (max-width: 23.5em) {
+    .customer {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 5rem;
+      display: block; } }
+  .customer__review {
+    background-color: #502050;
+    border-radius: 0.8rem;
+    padding: 4rem 3.2rem; }
+    .customer__review__user {
+      display: flex;
+      align-items: center;
+      gap: 2.3rem; }
+      .customer__review__user-img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%; }
+      .customer__review__user-details > h2:last-of-type {
+        margin-top: 0.5rem; }
+    .customer__review > p {
+      margin-top: 2.6rem; }
+    .customer__review--2 {
+      margin-top: 1.6rem; }
+    .customer__review--3 {
+      margin-top: 3.2rem; }
+      @media only screen and (max-width: 23.5em) {
+        .customer__review--3 {
+          margin-top: 1.6rem; } }
