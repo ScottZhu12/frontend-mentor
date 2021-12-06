@@ -14,3 +14,4 @@
 | HTML-CSS            | profile card component          | [Live](https://profile-card-component-scottzhu.netlify.app/)          |
 | HTML-CSS            | FAQ accordion card              | [Live](https://faq-accordion-card-scottzhu.netlify.app/)              |
 | HTML-CSS            | social proof section            | [Live](https://social-proof-section-scottzhu.netlify.app/)            |
+| HTML-CSS-JAVASCRIPT | article preview component       | [Live](https://article-preview-component-scottzhu.netlify.app/)       |
