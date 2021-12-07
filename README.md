@@ -15,3 +15,4 @@
 | HTML-CSS            | FAQ accordion card              | [Live](https://faq-accordion-card-scottzhu.netlify.app/)              |
 | HTML-CSS            | social proof section            | [Live](https://social-proof-section-scottzhu.netlify.app/)            |
 | HTML-CSS-JAVASCRIPT | article preview component       | [Live](https://article-preview-component-scottzhu.netlify.app/)       |
+| HTML-CSS            | four card feature section       | [Live](https://four-card-feature-section-scottzhu.netlify.app/)       |

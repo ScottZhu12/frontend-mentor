@@ -1,0 +1,36 @@
+.main {
+  width: 100%;
+  background-color: $color-grey;
+  padding: 8rem 16.5rem;
+
+  @include respond(phone) {
+    padding: 8.5rem 3.2rem;
+  }
+
+  @include respond(desktop-large) {
+    width: 144rem;
+    height: 100vh;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  width: 50%;
+  text-align: center;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.section-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  column-gap: 3rem;
+  row-gap: 3rem;
+
+  @include respond(phone) {
+    display: block;
+  }
+}
