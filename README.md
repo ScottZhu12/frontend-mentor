@@ -16,3 +16,4 @@
 | HTML-CSS            | social proof section            | [Live](https://social-proof-section-scottzhu.netlify.app/)            |
 | HTML-CSS-JAVASCRIPT | article preview component       | [Live](https://article-preview-component-scottzhu.netlify.app/)       |
 | HTML-CSS            | four card feature section       | [Live](https://four-card-feature-section-scottzhu.netlify.app/)       |
+| HTML-CSS            | base apparel coming soon page   | [Live](https://base-apparel-coming-soon-page-scottzhu.netlify.app/)   |
