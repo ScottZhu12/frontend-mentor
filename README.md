@@ -18,3 +18,4 @@
 | HTML-CSS            | four card feature section         | [Live](https://four-card-feature-section-scottzhu.netlify.app/)         |
 | HTML-CSS            | base apparel coming soon page     | [Live](https://base-apparel-coming-soon-page-scottzhu.netlify.app/)     |
 | HTML-CSS-JAVASCRIPT | intro component with sign up form | [Live](https://intro-component-with-sign-up-form-scottzhu.netlify.app/) |
+| HTML-CSS            | single price card component       | [Live](https://single-price-card-component-scottzhu.netlify.app/)       |
