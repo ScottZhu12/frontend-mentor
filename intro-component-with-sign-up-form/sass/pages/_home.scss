@@ -1,0 +1,106 @@
+.main {
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(255, 122, 122, 0.7),
+      rgba(255, 122, 122, 0.7)
+    ),
+    url("../../images/bg-intro-desktop.png");
+  background-position: center;
+  background-size: cover;
+  padding: 12rem 16.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4.5rem;
+
+  @include respond(phone) {
+    padding: 8.8rem 2.4rem;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 6.4rem;
+  }
+
+  @include respond(desktop-large) {
+    width: 144rem;
+    margin: 0 auto;
+  }
+}
+
+.intro {
+  align-self: center;
+}
+
+.signup {
+  &__btn {
+    background: none;
+    border: none;
+    padding: 1.5rem 10.5rem;
+    background-color: $color-blue;
+    box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+
+    @include respond(phone) {
+      padding: 1.8rem 6rem;
+    }
+  }
+}
+
+.signup__form {
+  background-color: #fff;
+  box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  @include respond(phone) {
+    margin-top: 2.4rem !important;
+    padding: 2.4rem;
+    gap: 2rem;
+  }
+
+  &__field-container {
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.5rem 3.2rem;
+    border: 1px solid #5e54a4;
+    border-radius: 0.5rem;
+
+    @include respond(phone) {
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: $color-green-primary;
+    box-shadow: inset 0 -0.4rem 0 rgba(0, 0, 0, 0.09);
+    border-radius: 0.5rem;
+    padding: 1.5rem 12rem;
+    cursor: pointer;
+
+    @include respond(phone) {
+      padding: 2rem;
+    }
+  }
+
+  &__error {
+    position: absolute;
+
+    &-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      object-fit: cover;
+      top: 1.3rem;
+      right: 2rem;
+    }
+
+    &-text {
+      bottom: -2rem;
+      right: 0;
+    }
+  }
+}

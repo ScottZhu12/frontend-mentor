@@ -1,0 +1,83 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+  letter-spacing: -0.5px;
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+    letter-spacing: -0.3px;
+    line-height: 3.6rem;
+    padding: 0 0.5rem;
+    text-align: center;
+  }
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+
+  @include respond(phone) {
+    text-align: center;
+  }
+}
+
+.btn-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.25px;
+  color: #fff;
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--light {
+    font-weight: 400;
+  }
+}
+
+.signup__form__input {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  color: $color-blue-dark-1;
+}
+
+.signup__form__btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.claim-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: $color-blue-dark-2;
+  text-align: center;
+
+  @include respond(phone) {
+    margin-top: -1rem;
+  }
+
+  & > span:last-of-type {
+    color: $color-red-primary;
+  }
+}
+
+.signup__form__error-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: $color-red-primary;
+}

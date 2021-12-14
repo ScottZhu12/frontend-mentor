@@ -1,0 +1,12 @@
+.mar-top-medium {
+  margin-top: 2.4rem;
+
+  @include respond(phone) {
+    margin-top: 1.6rem;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
