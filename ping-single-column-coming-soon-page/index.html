@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="./js/main.js"></script>
+
+    <title>ping single column coming soon page</title>
+  </head>
+  <body>
+    <main class="main">
+      <img src="./images/logo.svg" alt="company logo" class="logo" />
+
+      <h1 class="heading-primary mar-top-medium">
+        <span class="heading-primary--light">We are launching</span>
+
+        <span class="heading-primary--dark">soon!</span>
+      </h1>
+
+      <p class="paragraph mar-top-small">Subscribe and get notified</p>
+
+      <form action="#" class="form mar-top-medium">
+        <label for="email"></label>
+        <input
+          type="email"
+          class="form__input form__input--email"
+          placeholder="Your email address..."
+          id="email"
+          name="email"
+          required
+        />
+
+        <div class="err-text hidden">Please provide a valid email address</div>
+
+        <label for="submit"></label>
+        <input
+          type="submit"
+          class="form__input form__input--submit"
+          id="submit"
+          name="submit"
+          value="Notify Me"
+        />
+      </form>
+
+      <img
+        src="./images/illustration-dashboard.png"
+        alt="image of a dashboard"
+        class="dashboard mar-top-ex-large"
+      />
+
+      <footer class="footer mar-top-large">
+        <div class="footer__link">
+          <div class="footer__link-icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </div>
+
+          <div class="footer__link-icon">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+
+          <div class="footer__link-icon">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </div>
+        </div>
+
+        <p class="paragraph paragraph--footer">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

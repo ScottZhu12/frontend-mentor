@@ -1,0 +1,115 @@
+.main {
+  width: 100%;
+  padding: 8rem 40rem;
+
+  @include respond(desktop-large) {
+    width: 144rem;
+    margin: 0 auto;
+  }
+
+  @include respond(phone) {
+    padding: 8rem 2.8rem 3.6rem 2.8rem;
+  }
+}
+
+.logo {
+  display: block;
+  width: 9rem;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  gap: 0.6rem;
+  position: relative;
+
+  @include respond(phone) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__input {
+    &--email {
+      width: 100%;
+      padding: 1.8rem 3rem;
+      border: 1px solid $color-grey;
+      box-shadow: 0 0 0.7rem 0.3rem rgba(0, 0, 0, 0.1);
+      border-radius: 2.8rem;
+
+      &:focus {
+        outline: 1px solid $color-grey;
+      }
+    }
+
+    &--submit {
+      padding: 2rem 6.2rem;
+      background-color: $color-blue-primary;
+      border: none;
+      box-shadow: 0 0.5rem 1rem 0.2rem rgba(76, 123, 243, 0.25);
+      border-radius: 2.8rem;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: rgba(79, 125, 243, 0.8);
+      }
+    }
+
+    @include respond(phone) {
+      width: 90%;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+  }
+}
+
+.err-text {
+  position: absolute;
+  top: 6.5rem;
+  left: 3.5rem;
+
+  @include respond(phone) {
+    position: initial;
+  }
+}
+
+.dashboard {
+  display: block;
+  width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.footer {
+  display: grid;
+  justify-items: center;
+  row-gap: 2.5rem;
+
+  &__link {
+    display: flex;
+    gap: 1rem;
+
+    &-icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-blue-primary;
+      border: 0.5px solid $color-blue-light;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #fff;
+        background-color: $color-blue-primary;
+      }
+    }
+  }
+}

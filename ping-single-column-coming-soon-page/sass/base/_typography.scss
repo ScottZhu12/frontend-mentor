@@ -1,0 +1,77 @@
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+  text-align: center;
+
+  @include respond(phone) {
+    font-size: 2.2rem;
+  }
+
+  &--light {
+    font-weight: 400;
+    color: $color-grey;
+  }
+
+  &--dark {
+    font-weight: 700;
+    color: $color-blue-dark;
+  }
+}
+
+.paragraph {
+  font-size: 2rem;
+  font-weight: 300;
+  color: $color-blue-dark;
+  text-align: center;
+
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
+
+  &--footer {
+    font-size: 1.2rem;
+    color: $color-grey;
+
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.form__input {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.6rem;
+
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
+
+  &--email {
+    font-weight: 300;
+    color: $color-blue-dark;
+
+    &::placeholder {
+      color: $color-grey;
+    }
+  }
+
+  &--submit {
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+.err-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: $color-red;
+
+  @include respond(phone) {
+    font-size: 1rem;
+  }
+}
