@@ -1,0 +1,15 @@
+.mar-top-large {
+  margin-top: 10rem;
+
+  @include respond(phone) {
+    margin-top: 5rem;
+  }
+}
+
+.mar-top-small {
+  margin-top: 2.4rem;
+
+  @include respond(phone) {
+    margin-top: 1.6rem;
+  }
+}

@@ -20,3 +20,4 @@
 | HTML-CSS-JAVASCRIPT | intro component with sign up form   | [Live](https://intro-component-with-sign-up-form-scottzhu.netlify.app/)   |
 | HTML-CSS            | single price grid component         | [Live](https://single-price-card-component-scottzhu.netlify.app/)         |
 | HTML-CSS-JAVASCRIPT | ping single column coming soon page | [Live](https://ping-single-column-coming-soon-page-scottzhu.netlify.app/) |
+| HTML-CSS            | huddle landing page                 | [Live](https://huddle-landing-page-scottzhu.netlify.app/)                 |
