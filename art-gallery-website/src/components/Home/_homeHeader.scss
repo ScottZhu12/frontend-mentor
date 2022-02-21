@@ -1,0 +1,13 @@
+@use "../../stylesheets/abstracts/variables" as *;
+
+.home-header {
+  display: flex;
+
+  & > div {
+    flex: 1 1 0;
+  }
+
+  & > div:first-child {
+    background-color: $color-black;
+  }
+}
