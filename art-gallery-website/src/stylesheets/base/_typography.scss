@@ -1,8 +1,17 @@
+@use "../abstracts/variables" as *;
+
 .heading {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
 
   &--home-header {
+    color: $color-white;
+    font-size: 9.6rem;
+    line-height: 8.8rem;
+    position: relative;
+    top: 27%;
+    left: 48%;
+    mix-blend-mode: exclusion;
   }
 }
 
