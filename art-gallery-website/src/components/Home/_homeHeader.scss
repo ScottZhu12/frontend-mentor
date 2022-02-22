@@ -1,0 +1,7 @@
+.home-header {
+  display: flex;
+
+  & > div {
+    flex: 1 1 0;
+  }
+}
