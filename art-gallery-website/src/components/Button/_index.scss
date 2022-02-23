@@ -1,0 +1,73 @@
+@use "../../stylesheets/abstracts/variables" as *;
+@use "../../stylesheets/abstracts/mixins" as *;
+
+.btn {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  color: $color-white;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+
+  &:hover {
+    & > span:first-child {
+      background-color: $color-gold;
+    }
+
+    & > span:last-child {
+      background-color: $color-black;
+    }
+  }
+
+  & > span:first-child {
+    background-color: $color-black;
+    padding: 1.85rem 3.2rem;
+    transition: all 0.3s;
+  }
+
+  & > span:last-child {
+    background-color: $color-gold;
+    padding: 2.4rem;
+    transition: all 0.3s;
+
+    & > img {
+      width: 0.8rem;
+    }
+  }
+
+  &--home {
+    position: relative;
+    right: 15%;
+    top: 35%;
+
+    @include respond(tablet) {
+      right: 10%;
+      top: 50%;
+    }
+
+    @include respond(phone) {
+      right: 0;
+      top: 20rem;
+    }
+  }
+
+  &--location {
+    position: absolute;
+    top: 0;
+    left: 10.5%;
+
+    @include respond(tablet) {
+      left: 5%;
+    }
+
+    @include respond(phone) {
+      left: 0;
+    }
+
+    & > span:first-child {
+      order: 999;
+    }
+  }
+}

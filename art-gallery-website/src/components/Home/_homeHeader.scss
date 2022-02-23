@@ -1,7 +1,12 @@
 @use "../../stylesheets/abstracts/variables" as *;
+@use "../../stylesheets/abstracts/mixins" as *;
 
 .home-header {
   display: flex;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
 
   & > div {
     flex: 1 1 0;
@@ -9,5 +14,54 @@
 
   & > div:first-child {
     background-color: $color-black;
+
+    @include respond(tablet) {
+      display: none;
+    }
+
+    & > h1 {
+      position: relative;
+      top: 27%;
+      left: 48%;
+    }
+  }
+
+  & > div:last-child {
+    background-color: $color-white;
+
+    & > p {
+      width: 74%;
+      position: relative;
+      top: 27%;
+      right: 15%;
+
+      @include respond(tablet) {
+        width: 95%;
+        top: 46%;
+        right: 10%;
+
+        &::before {
+          content: "MODERN \A ART GALLERY";
+          position: absolute;
+          white-space: pre-wrap;
+          top: -140%;
+          left: 0;
+          font-family: "Big Shoulders Display", cursive;
+          font-weight: 700;
+          font-size: 6.5rem;
+          line-height: 6.5rem;
+        }
+      }
+
+      @include respond(phone) {
+        width: 100%;
+        top: 17.5rem;
+        right: 0;
+      }
+    }
+
+    @include respond(phone) {
+      padding: 0 1.6rem;
+    }
   }
 }

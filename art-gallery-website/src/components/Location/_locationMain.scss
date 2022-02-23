@@ -1,0 +1,43 @@
+@use "../../stylesheets/abstracts/variables" as *;
+@use "../../stylesheets/abstracts/mixins" as *;
+
+.location-main {
+  background-color: $color-black;
+  padding: 11rem 16.5rem;
+  display: flex;
+  color: $color-white;
+  justify-content: space-between;
+
+  @include respond(tablet) {
+    padding: 8rem 4rem;
+  }
+
+  @include respond(phone) {
+    padding: 4.8rem 1.6rem;
+    flex-direction: column;
+  }
+
+  &__detail {
+    & > address > span {
+      display: inline-block;
+      margin-bottom: 2.4rem;
+
+      @include respond(phone) {
+        margin-top: 4.8rem;
+      }
+    }
+
+    & > p {
+      width: 54rem;
+      margin-top: 3.2rem;
+
+      @include respond(tablet) {
+        width: 40rem;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+  }
+}
