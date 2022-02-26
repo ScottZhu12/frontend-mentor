@@ -1,12 +1,18 @@
 import React from "react";
 
 import Header from "../Header";
+import MainSection from "../MainSection";
+import SubSection from "../SubSection";
+import Footer from "../Footer";
 
 const App = () => {
   return (
-    <React.Fragment>
+    <div className="app">
       <Header />
-    </React.Fragment>
+      <MainSection />
+      <SubSection />
+      <Footer />
+    </div>
   );
 };
 

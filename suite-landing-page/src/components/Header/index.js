@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className="header">
       <img src={`${imgPath}/assets/logo.svg`} alt="company logo" />
-      <Button btnText="Request Beta Access" />
+      <Button btnText="Request Beta Access" btnName="btn--header" />
     </div>
   );
 };
