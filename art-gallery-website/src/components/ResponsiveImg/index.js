@@ -1,6 +1,6 @@
 import React from "react";
 
-const imgPath = `${process.env.PUBLIC_URL}/assets`;
+import imagePath from "../../imagePath";
 
 const ResponsiveImg = ({ imgName }) => {
   return (
@@ -8,17 +8,17 @@ const ResponsiveImg = ({ imgName }) => {
       <picture>
         <source
           media="(max-width: 23.45em)"
-          srcSet={`${imgPath}/mobile/${imgName}.jpg, ${imgPath}/mobile/${imgName}@2x.jpg 2x`}
+          srcSet={`${imagePath}/mobile/${imgName}.jpg, ${imagePath}/mobile/${imgName}@2x.jpg 2x`}
         ></source>
 
         <source
           media="(max-width: 48em)"
-          srcSet={`${imgPath}/tablet/${imgName}.jpg, ${imgPath}/tablet/${imgName}@2x.jpg 2x`}
+          srcSet={`${imagePath}/tablet/${imgName}.jpg, ${imagePath}/tablet/${imgName}@2x.jpg 2x`}
         ></source>
 
         <img
-          srcSet={`${imgPath}/desktop/${imgName}.jpg, ${imgPath}/desktop/${imgName}@2x.jpg 2x`}
-          src={`${imgPath}/desktop/${imgName}.jpg`}
+          srcSet={`${imagePath}/desktop/${imgName}.jpg, ${imagePath}/desktop/${imgName}@2x.jpg 2x`}
+          src={`${imagePath}/desktop/${imgName}.jpg`}
           alt="sketch of a woman"
         />
       </picture>

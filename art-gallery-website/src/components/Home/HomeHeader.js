@@ -1,6 +1,7 @@
 import React from "react";
 
 import ResponsiveImg from "../ResponsiveImg";
+import Button from "../Button";
 
 const HomeHeader = () => {
   return (
@@ -17,11 +18,17 @@ const HomeHeader = () => {
       </div>
 
       <div>
-        <p>
+        <p className="paragraph paragraph--home-header">
           The arts in the collection of the Modern Art Gallery all started from
           a spark of inspiration. Will these pieces inspire you? Visit us and
           find out.
         </p>
+        <Button
+          text="OUR LOCATION"
+          imgName="icon-arrow-right"
+          path="/location"
+          btnName="btn--home"
+        />
       </div>
     </div>
   );

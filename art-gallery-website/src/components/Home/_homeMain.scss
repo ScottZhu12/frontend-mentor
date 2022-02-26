@@ -1,0 +1,111 @@
+@use "../../stylesheets/abstracts/variables" as *;
+@use "../../stylesheets/abstracts/mixins" as *;
+
+.home-main {
+  padding: 18rem 16.5rem;
+
+  @include respond(tablet) {
+    padding: 12rem 4rem;
+  }
+
+  @include respond(phone) {
+    padding: 0 1.6rem;
+    margin-top: 30rem;
+  }
+
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &-text {
+      & > h2 {
+        width: 30rem;
+
+        @include respond(tablet) {
+          width: 18rem;
+        }
+
+        @include respond(phone) {
+          width: 26rem;
+          margin-top: 2.5rem;
+        }
+      }
+
+      & > p {
+        width: 35rem;
+        margin-top: 3.2rem;
+
+        @include respond(tablet) {
+          width: 23rem;
+          margin-top: 2.4rem;
+        }
+
+        @include respond(phone) {
+          width: 100%;
+        }
+      }
+    }
+
+    &-img {
+      @include respond(phone) {
+        order: -1;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1.5fr 1fr;
+
+    @include respond(tablet) {
+      margin-top: 1rem;
+      gap: 1rem;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3.2rem;
+    }
+
+    &-detail {
+      &__text {
+        background-color: $color-black;
+        padding: 6.5rem 4.75rem;
+        margin-top: 1rem;
+
+        @include respond(tablet) {
+          padding: 8.9rem 3rem;
+        }
+
+        @include respond(phone) {
+          padding: 4.8rem 2.4rem;
+        }
+
+        & > h2 {
+          width: 30rem;
+
+          @include respond(tablet) {
+            width: fit-content;
+          }
+        }
+
+        & > p {
+          width: 35rem;
+          margin-top: 3.2rem;
+
+          @include respond(tablet) {
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
-@use "./homeHeader";
-@use "./homeMain";
+@use "./locationHeader";
+@use "./locationMain";
 @use "../../stylesheets/abstracts/mixins" as *;
 
-.home {
+.location {
   @include respond(desktop) {
     width: 144rem;
     margin: 0 auto;
