@@ -27,3 +27,4 @@
 | Tags     | Challenges          | Live                                                      |
 | -------- | ------------------- | --------------------------------------------------------- |
 | HTML-CSS | art gallery website | [Live](https://art-gallery-website-scottzhu.netlify.app/) |
+| HTML-CSS | suite landing page  | [Live](https://suite-landing-page-scottzhu.netlify.app/)  |

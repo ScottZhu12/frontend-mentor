@@ -1,0 +1,55 @@
+@use "../../stylesheets/abstracts/variables" as *;
+@use "../../stylesheets/abstracts/mixins" as *;
+
+.btn {
+  padding: 1.2rem 2.4rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: -0.16px;
+  border-radius: 0.6rem;
+
+  @include respond(phone) {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.14px;
+    padding: 1rem;
+  }
+
+  &--header {
+    color: $color-black;
+    border: 1px solid $color-black;
+
+    @include respond(phone) {
+      width: 18.2rem;
+    }
+
+    &:hover {
+      color: $color-white-light;
+      background-color: $color-black;
+    }
+  }
+
+  &--main-section {
+    color: $color-white-light;
+    background: $color-black;
+
+    @include respond(phone) {
+      width: 24rem;
+      padding: 1.4rem 2.4rem;
+    }
+
+    &:hover {
+      background: linear-gradient(
+        135deg,
+        $color-purple-light 0%,
+        $color-purple-dark 49.21%,
+        $color-orange 100%
+      );
+    }
+  }
+}

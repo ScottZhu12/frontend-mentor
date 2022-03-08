@@ -1,0 +1,94 @@
+@use "../../stylesheets/abstracts/variables" as *;
+@use "../../stylesheets/abstracts/mixins" as *;
+
+.sub-section {
+  width: 110rem;
+  margin-top: 15.5rem;
+  color: $color-white-light;
+
+  @include respond(tablet) {
+    width: 100%;
+    padding: 0 4rem;
+  }
+
+  @include respond(tablet) {
+    padding: 0;
+  }
+
+  &__content {
+    position: relative;
+    display: grid;
+    background-color: $color-black;
+    grid-template-columns: 1.75fr 2fr;
+    height: 53rem;
+    border-radius: 1.5rem;
+
+    @include respond(tablet) {
+      display: block;
+      margin-top: 10rem;
+      text-align: center;
+      height: auto;
+    }
+
+    &-img {
+      position: absolute;
+      background-image: url("../../../public/assets/pattern-blur.svg");
+      background-position: center 6rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: -6rem;
+      left: 10rem;
+
+      @include respond(tablet) {
+        width: 25rem;
+        top: -18rem;
+        left: 32%;
+      }
+
+      @include respond(phone) {
+        left: 15%;
+      }
+    }
+
+    &-text {
+      grid-column: 2 / -1;
+      padding: 8rem 11rem;
+
+      @include respond(tablet) {
+        padding: 0;
+        padding-top: 34rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        padding-bottom: 6.4rem;
+      }
+
+      @include respond(phone) {
+        text-align: center;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+      }
+
+      & > img {
+        position: absolute;
+        top: 28%;
+        left: 45%;
+
+        @include respond(tablet) {
+          width: 5rem;
+          top: 42.5%;
+          left: 45%;
+        }
+
+        @include respond(phone) {
+          top: 35%;
+          left: 40%;
+        }
+      }
+
+      & > p,
+      & > h3 {
+        margin-top: 4rem;
+      }
+    }
+  }
+}
