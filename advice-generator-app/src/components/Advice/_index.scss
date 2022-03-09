@@ -1,6 +1,17 @@
+@use "../../styles/abstracts/mixins" as *;
+
 .advice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   & > p {
     width: 40rem;
     margin-top: 2.4rem;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 }

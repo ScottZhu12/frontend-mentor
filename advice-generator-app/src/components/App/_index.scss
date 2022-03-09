@@ -1,7 +1,12 @@
 @use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
 
 .app {
   width: 100vw;
   height: 100vh;
   background-color: $color-dark-blue;
+
+  @include respond(phone) {
+    padding: 12rem 1.6rem;
+  }
 }

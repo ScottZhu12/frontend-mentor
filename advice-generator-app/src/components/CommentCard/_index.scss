@@ -1,4 +1,5 @@
 @use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
 
 .comment-card {
   background-color: $color-dark-grayish-blue;
@@ -10,4 +11,36 @@
   padding: 4.8rem 4.8rem 7.2rem 4.8rem;
   border-radius: 1.5rem;
   box-shadow: 3rem 5rem 8rem rgba(0, 0, 0, 0.1);
+
+  @include respond(phone) {
+    padding: 4rem 2.4rem 6.4rem 2.4rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  & > .dice-container {
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+    background-color: $color-neon-green;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0.5rem 1.5rem rgba(206, 227, 233, 0.4);
+    }
+
+    & > img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }

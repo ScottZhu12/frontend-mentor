@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .heading {
   font-family: "Manrope", sans-serif;
@@ -8,6 +9,12 @@
   letter-spacing: 0.4rem;
   color: $color-neon-green;
   text-align: center;
+
+  @include respond(phone) {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.35rem;
+  }
 }
 
 .paragraph {
@@ -18,4 +25,10 @@
   letter-spacing: -0.3px;
   color: $color-light-cyan;
   text-align: center;
+
+  @include respond(phone) {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.25px;
+  }
 }

@@ -4,7 +4,7 @@ const imgPath = process.env.PUBLIC_URL;
 
 const ResponsiveImage = ({ imgName }) => {
   return (
-    <div>
+    <div className="responsive-image">
       <picture>
         <source
           media="(max-width:23.5em)"
