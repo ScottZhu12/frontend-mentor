@@ -1,0 +1,32 @@
+@use "../../styles/abstracts/variables" as *;
+
+.personal-card {
+  grid-row: 1 / -1;
+  background-color: $color-dark-blue;
+  border-radius: 1.5rem;
+
+  &__intro {
+    background-color: $color-violet;
+    border-radius: 1.5rem;
+    padding: 3.7rem 8.4rem 8rem 3.2rem;
+
+    & > img {
+      width: 7.8rem;
+      height: 7.8rem;
+      border-radius: 50%;
+      filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.25));
+      border: 3px solid #fff;
+    }
+
+    &__text {
+      margin-top: 4.2rem;
+    }
+  }
+
+  &__selections {
+    padding: 2.6rem 3.2rem 3.2rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
