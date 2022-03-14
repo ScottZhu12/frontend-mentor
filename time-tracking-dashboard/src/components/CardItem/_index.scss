@@ -1,0 +1,18 @@
+@use "../../styles/abstracts/variables" as *;
+
+.card-item {
+  &__img {
+    position: relative;
+    background-color: $color-red;
+    width: 100%;
+    border: 1px solid #fff;
+
+    & > img {
+      width: 7.8rem;
+      height: 7.8rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
