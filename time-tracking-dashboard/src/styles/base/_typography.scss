@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+
+.heading {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+
+  &--personal-intro {
+    font-size: 4rem;
+    line-height: 4.7rem;
+    font-weight: 300;
+    color: #fff;
+  }
+}
+
+.paragraph {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+
+  &--personal-intro {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: $color-pale-blue;
+  }
+
+  &--personal-select {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: $color-violet;
+  }
+}
