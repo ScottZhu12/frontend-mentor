@@ -1,0 +1,10 @@
+.card-list {
+  display: grid;
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  margin-left: 3rem;
+  row-gap: 3rem;
+  column-gap: 3rem;
+}

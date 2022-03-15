@@ -38,6 +38,16 @@
     font-size: 1.8rem;
     line-height: 2rem;
     color: $color-violet;
+    width: fit-content;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &--active {
+    color: #fff;
   }
 
   &--card-detail {

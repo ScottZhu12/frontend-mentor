@@ -1,18 +1,82 @@
 @use "../../styles/abstracts/variables" as *;
 
 .card-item {
-  &__img {
-    position: relative;
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &--Work {
     background-color: $color-red;
-    width: 100%;
-    border: 1px solid #fff;
+  }
+
+  &--Play {
+    background-color: $color-pale-blue;
+  }
+
+  &--Study {
+    background-color: $color-light-red;
+  }
+
+  &--Exercise {
+    background-color: $color-green;
+  }
+
+  &--Social {
+    background-color: $color-violet;
+  }
+
+  &--SelfCare {
+    background-color: $color-orange;
+  }
+
+  &__img {
+    height: 4.5rem;
 
     & > img {
       width: 7.8rem;
       height: 7.8rem;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: -1.25rem;
+      right: 1.5rem;
+    }
+  }
+
+  &__content {
+    background-color: $color-dark-blue;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 3.2rem 3rem;
+    position: relative;
+    z-index: 999;
+    flex: 1 0 auto;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #33397a;
+    }
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > img {
+        cursor: pointer;
+
+        &:hover {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+
+    & > .heading {
+      margin-top: 2.4rem;
+    }
+
+    & > .paragraph {
+      margin-top: 0.8rem;
     }
   }
 }
