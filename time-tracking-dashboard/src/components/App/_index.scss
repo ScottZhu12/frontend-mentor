@@ -8,6 +8,12 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(phone) {
+    height: auto;
+    display: block;
+    padding: 8rem 2.4rem;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -15,6 +21,11 @@
 
     @include respond(desktop) {
       width: 111rem;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      display: block;
     }
   }
 }

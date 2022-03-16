@@ -24,8 +24,9 @@
 
 ## Junior
 
-| Tags        | Challenges           | Live                                                       |
-| ----------- | -------------------- | ---------------------------------------------------------- |
-| HTML-CSS    | art gallery website  | [Live](https://art-gallery-website-scottzhu.netlify.app/)  |
-| HTML-CSS    | suite landing page   | [Live](https://suite-landing-page-scottzhu.netlify.app/)   |
-| HTML-CSS-JS | advice generator app | [Live](https://advice-generator-app-scottzhu.netlify.app/) |
+| Tags        | Challenges              | Live                                                          |
+| ----------- | ----------------------- | ------------------------------------------------------------- |
+| HTML-CSS    | art gallery website     | [Live](https://art-gallery-website-scottzhu.netlify.app/)     |
+| HTML-CSS    | suite landing page      | [Live](https://suite-landing-page-scottzhu.netlify.app/)      |
+| HTML-CSS-JS | advice generator app    | [Live](https://advice-generator-app-scottzhu.netlify.app/)    |
+| HTML-CSS-JS | time tracking dashboard | [Live](https://time-tracking-dashboard-scottzhu.netlify.app/) |
