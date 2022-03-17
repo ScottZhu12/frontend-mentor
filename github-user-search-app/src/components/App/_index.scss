@@ -1,0 +1,18 @@
+@use "../../styles/abstracts" as *;
+
+.app {
+  background-color: $color-light-white-secondary;
+
+  @include respond(desktop) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 14.4rem;
+  }
+
+  &-content {
+    @include respond(desktop) {
+      width: 73rem;
+    }
+  }
+}
