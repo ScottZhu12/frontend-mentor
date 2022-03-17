@@ -1,3 +1,5 @@
+@use "../../styles/abstracts/mixins" as *;
+
 .card-list {
   display: grid;
   grid-column: 2 / -1;
@@ -7,4 +9,12 @@
   margin-left: 3rem;
   row-gap: 3rem;
   column-gap: 3rem;
+
+  @include respond(phone) {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-left: 0;
+  }
 }

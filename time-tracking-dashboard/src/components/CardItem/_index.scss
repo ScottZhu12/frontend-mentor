@@ -1,4 +1,4 @@
-@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts" as *;
 
 .card-item {
   position: relative;
@@ -53,6 +53,10 @@
     flex: 1 0 auto;
     cursor: pointer;
 
+    @include respond(phone) {
+      padding: 2.8rem 2.4rem;
+    }
+
     &:hover {
       background-color: #33397a;
     }
@@ -73,10 +77,20 @@
 
     & > .heading {
       margin-top: 2.4rem;
+
+      @include respond(phone) {
+        float: left;
+        margin-top: 1.5rem;
+      }
     }
 
     & > .paragraph {
       margin-top: 0.8rem;
+
+      @include respond(phone) {
+        float: right;
+        margin-top: 2.8rem;
+      }
     }
   }
 }

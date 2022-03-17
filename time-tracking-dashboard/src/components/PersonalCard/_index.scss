@@ -1,4 +1,4 @@
-@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts" as *;
 
 .personal-card {
   grid-row: 1 / -1;
@@ -10,6 +10,13 @@
     border-radius: 1.5rem;
     padding: 3.7rem 8.4rem 8rem 3.2rem;
 
+    @include respond(phone) {
+      padding: 3.5rem 3.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     & > img {
       width: 7.8rem;
       height: 7.8rem;
@@ -20,6 +27,10 @@
 
     &__text {
       margin-top: 4.2rem;
+
+      @include respond(phone) {
+        margin-top: 0;
+      }
     }
   }
 
@@ -28,5 +39,11 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @include respond(phone) {
+      flex-direction: row;
+      padding: 2.4rem 0;
+      justify-content: space-around;
+    }
   }
 }
