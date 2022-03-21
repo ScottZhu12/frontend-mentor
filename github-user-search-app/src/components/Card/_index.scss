@@ -1,0 +1,10 @@
+@use '../../styles/abstracts' as *;
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: $color-light-white-primary;
+  box-shadow: 0 1.6rem 3rem -1rem rgba(70, 96, 187, 0.2);
+  border-radius: 1.5rem;
+  margin-top: 4.4rem;
+}
