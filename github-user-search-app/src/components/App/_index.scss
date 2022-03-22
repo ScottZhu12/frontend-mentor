@@ -1,4 +1,4 @@
-@use "../../styles/abstracts" as *;
+@use '../../styles/abstracts' as *;
 
 .app {
   background-color: $color-light-white-secondary;
@@ -7,7 +7,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    padding-top: 14.4rem;
+    padding-top: 8.4rem;
   }
 
   &-content {

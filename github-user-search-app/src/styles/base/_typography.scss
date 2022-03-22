@@ -27,6 +27,25 @@
     font-size: 1.6rem;
     color: red;
   }
+
+  &--card-user-main-heading {
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+    color: $color-light-black;
+  }
+
+  &--card-user-sub-heading {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: $color-light-blue-primary;
+    text-decoration: none;
+  }
+
+  &--stats-number {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    color: $color-light-black;
+  }
 }
 
 .paragraph {
@@ -37,5 +56,38 @@
     font-size: 1.8rem;
     line-height: 2.5rem;
     color: $color-light-blue-secondary;
+  }
+
+  &--card-user-time {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: $color-light-grey;
+  }
+
+  &--card-user-bio {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: $color-light-blue-secondary;
+  }
+
+  &--stats-title {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: $color-light-blue-secondary;
+  }
+
+  &--links-item {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: $color-light-blue-secondary;
+
+    &--blog {
+      text-decoration: none;
+      width: fit-content;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
