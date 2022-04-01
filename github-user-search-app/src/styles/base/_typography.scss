@@ -9,6 +9,10 @@
     line-height: 3.8rem;
     color: $color-light-black;
 
+    &[data-theme='dark'] {
+      color: $color-dark-white;
+    }
+
     &__mode {
       font-size: 1.3rem;
       line-height: 1.9rem;

@@ -3,6 +3,10 @@
 .app {
   background-color: $color-light-white-secondary;
 
+  &[data-theme='dark'] {
+    background-color: $color-dark-black;
+  }
+
   @include respond(desktop) {
     height: 100vh;
     display: flex;

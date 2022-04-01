@@ -14,7 +14,9 @@ const SearchBar = (props) => {
   const validate = (formValues) => {
     const errors = {};
 
-    if (!formValues.userName) errors.userName = 'You must enter an user name';
+    if (!formValues.userName) {
+      errors.userName = 'You must enter an user name';
+    }
 
     return errors;
   };
@@ -40,16 +42,22 @@ const SearchBar = (props) => {
     );
   };
 
-  const renderError = ({ error, touched }) => {
+  const renderError = ({ touched, error }) => {
     if (touched && error) {
       return (
         <div className='error'>
-          <div className='heading heading--error'>
-            You must enter an user name
-          </div>
+          <div className='heading heading--error'>{error}</div>
         </div>
       );
     }
+  };
+
+  const userNotFound = () => {
+    if (props.userReducer.error) {
+      return <React.Fragment>No results</React.Fragment>;
+    }
+
+    return null;
   };
 
   return (
@@ -61,9 +69,13 @@ const SearchBar = (props) => {
         render={({ handleSubmit }) => (
           <form onSubmit={handleSubmit} className='search-bar__form'>
             <Field name='userName' component={renderInput} />
+
             <button type='submit' className='btn heading heading--btn'>
               Search
             </button>
+            <div className='heading heading--error user-not-found'>
+              {userNotFound()}
+            </div>
           </form>
         )}
       />

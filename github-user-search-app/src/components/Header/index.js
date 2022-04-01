@@ -1,17 +1,36 @@
-import React from "react";
+import React from 'react';
+import { connect } from 'react-redux';
+
+import { setTheme } from '../../actions';
+// import useLocalStorage from 'use-local-storage';
 
 const imgPath = process.env.PUBLIC_URL;
 
-const Header = () => {
+const Header = ({ setTheme }) => {
+  const isThemeDark = localStorage.getItem('theme') === 'dark';
+
   return (
-    <div className="header">
-      <h1 className="heading heading--header">devfinder</h1>
-      <div className="header__mode">
-        <h2 className="heading heading--header__mode">dark</h2>
-        <img src={`${imgPath}/assets/icon-moon.svg`} alt="icon-moon" />
+    <div className='header'>
+      <h1
+        className='heading heading--header'
+        data-theme={localStorage.getItem('theme')}
+      >
+        devfinder
+      </h1>
+      <div className='header__mode'>
+        <button onClick={setTheme}>
+          <h2 className='heading heading--header__mode'>
+            {isThemeDark ? 'light' : 'dark'}
+          </h2>
+          <img src={`${imgPath}/assets/icon-moon.svg`} alt='icon-moon' />
+        </button>
       </div>
     </div>
   );
 };
 
-export default Header;
+const mapStateToProps = (state) => {
+  return { themeReducer: state.themeReducer };
+};
+
+export default connect(mapStateToProps, { setTheme })(Header);
