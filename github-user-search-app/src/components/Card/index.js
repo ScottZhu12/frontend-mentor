@@ -41,27 +41,38 @@ class Card extends React.Component {
               className='card__user__img'
             />
             <div className='card__user__details'>
-              <div className='card__user__details-title'>
-                <h2 className='heading heading--card-user-main-heading'>
-                  {user.name}
-                </h2>
-                <div className='paragraph paragraph--card-user-time'>
-                  Joined {date} {month} {year}
-                </div>
+              <h2
+                className='heading heading--card-user-main-heading'
+                data-theme={localStorage.getItem('theme')}
+              >
+                {user.name ? user.name : 'Anonymous'}
+              </h2>
+              <div
+                className='paragraph paragraph--card-user-time'
+                data-theme={localStorage.getItem('theme')}
+              >
+                Joined {date} {month} {year}
               </div>
+
               <a
                 href={user.html_url}
                 target='_blank'
                 rel='noreferrer noopener'
                 className='heading heading--card-user-sub-heading'
               >{`@${user.login}`}</a>
-              <div className='paragraph paragraph--card-user-bio'>
-                {user.bio || `This profile has no bio`}
-              </div>
+            </div>
+            <div
+              className='paragraph paragraph--card-user-bio'
+              data-theme={localStorage.getItem('theme')}
+            >
+              {user.bio || `This profile has no bio`}
             </div>
           </div>
 
-          <div className='card__stats'>
+          <div
+            className='card__stats'
+            data-theme={localStorage.getItem('theme')}
+          >
             <div className='card__stats__item'>
               <div className='paragraph paragraph--stats-title'>Repos</div>
               <h3 className='heading heading--stats-number'>
@@ -84,7 +95,10 @@ class Card extends React.Component {
             </div>
           </div>
 
-          <div className='card__links'>
+          <div
+            className='card__links'
+            data-theme={localStorage.getItem('theme')}
+          >
             <div className={this.cardLinkClassName(user.location)}>
               <img
                 src={`${imgPath}/assets/icon-location.svg`}
@@ -140,12 +154,16 @@ class Card extends React.Component {
   }
 
   render() {
-    return <div className='card'>{this.renderCard()}</div>;
+    return (
+      <div className='card' data-theme={localStorage.getItem('theme')}>
+        {this.renderCard()}
+      </div>
+    );
   }
 }
 
 const mapStateToProps = (state) => {
-  return { userReducer: state.userReducer };
+  return { userReducer: state.userReducer, themeReducer: state.themeReducer };
 };
 
 export default connect(mapStateToProps, {})(Card);

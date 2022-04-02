@@ -36,6 +36,7 @@ const SearchBar = (props) => {
           {...input}
           autoComplete='off'
           placeholder='Search GitHub username'
+          data-theme={localStorage.getItem('theme')}
         />
         {renderError(meta)}
       </div>
@@ -70,7 +71,11 @@ const SearchBar = (props) => {
           <form onSubmit={handleSubmit} className='search-bar__form'>
             <Field name='userName' component={renderInput} />
 
-            <button type='submit' className='btn heading heading--btn'>
+            <button
+              type='submit'
+              className='btn heading heading--btn'
+              data-theme={localStorage.getItem('theme')}
+            >
               Search
             </button>
             <div className='heading heading--error user-not-found'>
@@ -84,7 +89,7 @@ const SearchBar = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  return { userReducer: state.userReducer };
+  return { userReducer: state.userReducer, themeReducer: state.themeReducer };
 };
 
 export default connect(mapStateToProps, { fetchUser })(SearchBar);

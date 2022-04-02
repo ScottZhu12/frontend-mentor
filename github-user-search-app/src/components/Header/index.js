@@ -18,11 +18,21 @@ const Header = ({ setTheme }) => {
         devfinder
       </h1>
       <div className='header__mode'>
-        <button onClick={setTheme}>
-          <h2 className='heading heading--header__mode'>
+        <button onClick={setTheme} data-theme={localStorage.getItem('theme')}>
+          <h2
+            className='heading heading--header__mode'
+            data-theme={localStorage.getItem('theme')}
+          >
             {isThemeDark ? 'light' : 'dark'}
           </h2>
-          <img src={`${imgPath}/assets/icon-moon.svg`} alt='icon-moon' />
+          <img
+            src={
+              isThemeDark
+                ? `${imgPath}/assets/icon-sun.svg`
+                : `${imgPath}/assets/icon-moon.svg`
+            }
+            alt='icon'
+          />
         </button>
       </div>
     </div>

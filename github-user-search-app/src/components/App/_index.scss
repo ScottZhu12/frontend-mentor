@@ -2,21 +2,41 @@
 
 .app {
   background-color: $color-light-white-secondary;
+  transition: all 0.3s;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 6.8rem;
 
   &[data-theme='dark'] {
     background-color: $color-dark-black;
   }
 
   @include respond(desktop) {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
     padding-top: 8.4rem;
   }
 
+  @include respond(tablet) {
+    padding-top: 10rem;
+  }
+
+  @include respond(phone) {
+    padding-top: 3rem;
+  }
+
   &-content {
+    width: 66rem;
+
     @include respond(desktop) {
       width: 73rem;
+    }
+
+    @include respond(tablet) {
+      width: 57rem;
+    }
+
+    @include respond(phone) {
+      width: 33rem;
     }
   }
 }

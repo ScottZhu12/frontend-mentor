@@ -17,10 +17,20 @@
     background-color: $color-light-blue-primary;
     border-radius: 1.5rem;
     cursor: pointer;
-    transition: all 0.3s;
+    // transition: all 0.3s;
+
+    @include respond(phone) {
+      padding: 1.2rem 1.8rem;
+      right: 0.7rem;
+    }
 
     &:hover {
       opacity: 0.5;
+    }
+
+    &[data-theme='dark']:hover {
+      opacity: 1;
+      background-color: #74c0fc;
     }
   }
 }
@@ -34,9 +44,18 @@
     left: 3.2rem;
     transform: translateY(-50%);
 
+    @include respond(phone) {
+      left: 1.6rem;
+    }
+
     & > img {
       width: 2.4rem;
       height: 2.4rem;
+
+      @include respond(phone) {
+        width: 2rem;
+        height: 2rem;
+      }
     }
   }
 
@@ -50,6 +69,15 @@
     border: none;
     outline: none;
     cursor: pointer;
+
+    @include respond(phone) {
+      padding: 1.8rem 0;
+      padding-left: 4.4rem;
+    }
+
+    &[data-theme='dark'] {
+      background-color: $color-dark-blue;
+    }
   }
 }
 
@@ -57,6 +85,10 @@
   position: absolute;
   bottom: -3rem;
   left: 2rem;
+
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
 }
 
 .user-not-found {
@@ -64,4 +96,9 @@
   top: 50%;
   right: 16rem;
   transform: translateY(-50%);
+
+  @include respond(phone) {
+    right: 10rem;
+    font-size: 1.1rem;
+  }
 }
