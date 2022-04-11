@@ -1,0 +1,40 @@
+@use '../../styles/abstracts' as *;
+
+.tip-main-input {
+  padding-right: 1.7rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  background-color: $color-cyan-light-secondary;
+  border-radius: 0.5rem;
+  border: none;
+
+  &:focus {
+    outline-color: $color-cyan-light-primary;
+  }
+}
+
+.form {
+  &-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    &:last-of-type {
+      margin-top: 4rem;
+    }
+
+    & > img {
+      position: absolute;
+      top: 55%;
+      left: 5%;
+    }
+  }
+
+  &__btn-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.4rem;
+    row-gap: 1.6rem;
+  }
+}
