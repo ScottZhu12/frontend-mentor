@@ -40,6 +40,10 @@
     font-size: 4.8rem;
     color: $color-cyan-primary;
     letter-spacing: -0.1rem;
+
+    @include respond(phone) {
+      font-size: 3.2rem;
+    }
   }
 }
 
@@ -115,6 +119,10 @@ input {
     color: #00474b;
     margin-top: 10rem;
     transition: all 0.3s;
+
+    @include respond(phone) {
+      margin-top: 3.2rem;
+    }
 
     &:hover {
       background-color: #9fe8df;

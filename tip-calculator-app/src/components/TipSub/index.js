@@ -35,6 +35,15 @@ const TipSub = (props) => {
       <button
         className='btn btn--reset'
         onClick={() => {
+          document.querySelector('.tip-main-input-bill').value = '';
+          document.querySelector('.custom-input').value = '';
+          document.querySelector('.tip-main-input-people').value = '';
+
+          const btnList = document.querySelectorAll('.btn--tip-selection');
+          for (let btn of btnList) {
+            btn.classList.remove('btn--tip-selection-active');
+          }
+
           props.dispatch(reset());
         }}
       >

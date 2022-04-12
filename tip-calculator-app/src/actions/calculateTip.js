@@ -1,5 +1,7 @@
 import { FIND_TIP } from './types';
 import { RESET } from './types';
+import { STORE_FORM_VALUES } from './types';
+import { GET_FORM_VALUES } from './types';
 
 export const calculateTip = (bill, percent, people) => {
   const totalTip = (bill * percent).toFixed(2);
@@ -11,6 +13,19 @@ export const calculateTip = (bill, percent, people) => {
       totalTip,
       meanTip,
     },
+  };
+};
+
+export const storeFormValues = (formValues) => {
+  return {
+    type: STORE_FORM_VALUES,
+    payload: formValues,
+  };
+};
+
+export const getFormValues = () => {
+  return {
+    type: GET_FORM_VALUES,
   };
 };
 

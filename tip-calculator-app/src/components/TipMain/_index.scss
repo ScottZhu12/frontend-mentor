@@ -42,6 +42,10 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.4rem;
     row-gap: 1.6rem;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 

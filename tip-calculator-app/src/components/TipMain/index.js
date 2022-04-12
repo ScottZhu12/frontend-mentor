@@ -4,10 +4,12 @@ import { connect } from 'react-redux';
 
 import { imgPath } from '../App';
 import { calculateTip } from '../../actions';
+import { storeFormValues } from '../../actions';
 
 const TipMain = (props) => {
   const onSubmit = (formValues) => {
     formValues.customTip = '';
+    props.dispatch(storeFormValues(formValues));
   };
 
   const validate = (formValues) => {
@@ -79,6 +81,7 @@ const TipMain = (props) => {
       const people = Number(
         document.querySelector('.tip-main-input-people').value
       );
+
       props.dispatch(calculateTip(bill, percent, people));
     }, 1000);
   };
@@ -185,4 +188,8 @@ const TipMain = (props) => {
   );
 };
 
-export default connect()(TipMain);
+const mapStateToProps = (state) => {
+  return { tip: state.tipReducer };
+};
+
+export default connect(mapStateToProps)(TipMain);
