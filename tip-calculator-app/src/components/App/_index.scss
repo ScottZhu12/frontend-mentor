@@ -1,0 +1,31 @@
+@use '../../styles/abstracts' as *;
+
+.app {
+  min-height: 100vh;
+  background-color: $color-cyan-light-primary;
+
+  @include respond(desktop) {
+    padding-top: 16rem;
+    padding-bottom: 10rem;
+  }
+
+  &__logo {
+    width: 9rem;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.8rem;
+    background-color: #fff;
+    box-shadow: 0 3.2rem 4.3rem rgba(79, 166, 175, 0.2);
+    border-radius: 2.5rem;
+
+    @include respond(desktop) {
+      width: 92rem;
+      margin: 8.8rem auto 0 auto;
+      padding: 4.5rem 4.8rem;
+    }
+  }
+}
