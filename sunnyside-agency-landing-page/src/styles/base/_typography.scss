@@ -2,23 +2,43 @@
 
 .heading {
   font-family: 'Fraunces', serif;
+  font-weight: 900;
 
   &--header {
-    font-weight: 900;
     letter-spacing: 8.75px;
     color: $color-white;
     font-size: 5.6rem;
     text-transform: uppercase;
   }
+
+  &--card-text {
+    font-size: 4rem;
+    letter-spacing: -0.3px;
+    line-height: 4.9rem;
+    color: $color-blue-dark-secondary;
+  }
+
+  &--main-card__link {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 .paragraph {
   font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+
+  &--card-text {
+    font-size: 1.8rem;
+    letter-spacing: -0.13px;
+    line-height: 3rem;
+    color: $color-blue-light-primary;
+  }
 }
 
 .navigation-links li {
   font-family: 'Barlow', sans-serif;
-  font-weight: 600;
   color: $color-white;
   font-size: 1.8rem;
   letter-spacing: -0.13px;

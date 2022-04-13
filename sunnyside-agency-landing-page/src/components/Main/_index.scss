@@ -1,0 +1,44 @@
+@use '../../styles/abstracts' as *;
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &-card {
+    &--text {
+      padding: 15.8rem 10rem 15.7rem 16.5rem;
+
+      & > p {
+        margin-top: 3.2rem;
+      }
+
+      & > div {
+        margin-top: 4rem;
+
+        & > div {
+          position: relative;
+          width: fit-content;
+          cursor: pointer;
+
+          &:hover {
+            & > div {
+              background-color: $color-yellow;
+              transform: scaleY(1.5);
+            }
+          }
+
+          & > div {
+            position: absolute;
+            bottom: 10%;
+            left: -5%;
+            width: 110%;
+            height: 0.5rem;
+            background-color: rgba(250, 212, 0, 0.65);
+            z-index: -1;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
