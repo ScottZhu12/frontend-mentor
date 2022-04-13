@@ -1,0 +1,31 @@
+@use '../../styles/abstracts' as *;
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-links {
+    & > ul {
+      display: flex;
+      align-items: center;
+      gap: 4.8rem;
+
+      & > li {
+        cursor: pointer;
+
+        &:last-of-type {
+          padding: 1.6rem 3.2rem;
+          background-color: $color-white;
+          border-radius: 2.8rem;
+          transition: all 0.3s;
+
+          &:hover {
+            mix-blend-mode: normal;
+            background-color: #ffffff40;
+          }
+        }
+      }
+    }
+  }
+}

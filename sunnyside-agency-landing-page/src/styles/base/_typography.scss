@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+.heading {
+  font-family: 'Fraunces', serif;
+
+  &--header {
+    font-weight: 900;
+    letter-spacing: 8.75px;
+    color: $color-white;
+    font-size: 5.6rem;
+    text-transform: uppercase;
+  }
+}
+
+.paragraph {
+  font-family: 'Barlow', sans-serif;
+}
+
+.navigation-links li {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  color: $color-white;
+  font-size: 1.8rem;
+  letter-spacing: -0.13px;
+
+  &:last-of-type {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.11px;
+    color: $color-blue-dark-secondary;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

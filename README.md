@@ -30,4 +30,4 @@
 | HTML-CSS    | suite landing page      | [Live](https://suite-landing-page-scottzhu.netlify.app/)      |
 | HTML-CSS-JS | advice generator app    | [Live](https://advice-generator-app-scottzhu.netlify.app/)    |
 | HTML-CSS-JS | time tracking dashboard | [Live](https://time-tracking-dashboard-scottzhu.netlify.app/) |
-| HTML-CSS-JS | github user search app  | [Live](https://github-user-search-scottzhu.netlify.app/)      |
+| HTML-CSS-JS | tip calculator app      | [Live](https://tip-calculator-app-scottzhu.netlify.app/)      |

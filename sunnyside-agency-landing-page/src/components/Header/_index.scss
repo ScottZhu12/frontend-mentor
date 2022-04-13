@@ -1,0 +1,21 @@
+.header {
+  background-image: url('../../../public/images/desktop/image-header.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3.4rem 4rem;
+
+  &-content {
+    text-align: center;
+    margin-top: 10.5rem;
+    position: relative;
+
+    & > img {
+      position: absolute;
+      left: 50%;
+      top: 12.6rem;
+      transform: translateX(-50%);
+    }
+  }
+}
