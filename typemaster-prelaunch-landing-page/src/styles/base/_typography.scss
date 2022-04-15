@@ -1,0 +1,111 @@
+@use '../abstracts' as *;
+
+.heading,
+.paragraph {
+  font-family: 'Barlow', sans-serif;
+}
+
+.heading {
+  font-weight: 700;
+
+  &--main-content {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    color: $color-blue-primary;
+    text-transform: uppercase;
+
+    @include respond(tablet) {
+      font-size: 4.8rem;
+      line-height: 4.8rem;
+    }
+  }
+
+  &--main-content__detail {
+    font-size: 1.6rem;
+    color: $color-blue-secondary;
+    text-transform: uppercase;
+  }
+
+  &--sub-content__text {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    color: $color-blue-primary;
+    text-transform: uppercase;
+  }
+
+  &--showcase {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: $color-blue-primary;
+  }
+}
+
+.paragraph {
+  font-weight: 400;
+
+  &--main-content {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: $color-blue-secondary;
+
+    @include respond(tablet) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &--sub-content__text {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: $color-blue-secondary;
+  }
+
+  &--showcase {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: $color-blue-secondary;
+  }
+
+  &--footer {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $color-blue-secondary;
+  }
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-family: 'Barlow', sans-serif;
+  padding: 1.6rem 2.6rem;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  @include respond(phone) {
+    padding: 1.6rem 1rem;
+  }
+
+  &--header {
+    background-color: $color-gray;
+    color: $color-blue-primary;
+
+    &:hover {
+      background-color: $color-blue-primary;
+      color: $color-white;
+    }
+  }
+
+  &--main {
+    background-color: $color-orange-primary;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-orange-secondary;
+    }
+  }
+}
